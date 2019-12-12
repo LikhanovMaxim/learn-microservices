@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id "org.springframework.boot" version "2.2.2.RELEASE"
+}
+
+group 'com.likhanov'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+def SPRING_BOOT_VERSION = '2.1.5.RELEASE'
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: SPRING_BOOT_VERSION
+    compile group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '2.2.2.RELEASE', ext: 'pom'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
